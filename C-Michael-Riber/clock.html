@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>时钟插件</title>
+	<style type="text/css">
+	.main {
+		width: 1200px;
+		height: 800px;
+		position: relative;
+		margin: 0 auto;
+	}
+	.content {
+		position: absolute;
+		width:600px;
+		height:450px;
+		left: 50%;
+		top:50%;
+		background-color: #00A99E;		
+		transform: translate(-50%,-50%);
+	}
+	.content--outer-shell {
+		position: absolute;
+		width:200px;
+		height:200px;
+		left: 50%;
+		top:50%;
+		background-color: #5FC5BA;
+		border-radius: 100%;
+		transform: translate(-50%,-50%);
+	}
+	.content--inner-shell {
+		position: absolute;
+		width:180px;
+		height:180px;
+		left: 50%;
+		top:50%;
+		background-color: #FFFFFF;
+		border-radius: 100%;
+		transform: translate(-50%,-50%);
+	}
+	.content-top{
+		position: absolute;
+		top: 0px;
+		left:50%;
+		width: 4px;
+		height: 12px;
+	    background-color: #3e4b44;;
+	    margin-left: -2px;
+	}
+	.content-left{
+		position: absolute;
+		top: 50%;
+		left:0;
+		width: 12px;
+		height: 4px;
+	    background-color: #3e4b44;;
+	}
+    .content-buttom{
+		position: absolute;		
+		bottom:0;
+		left: 50%;
+		width: 4px;
+		height: 12px;
+	    background-color: #3e4b44;;	
+	    margin-left: -2px;  
+	}
+    .content-right{
+		position: absolute;		
+		right: 0;
+		width: 12px;
+		height: 4px;
+	    background-color: #3e4b44;
+	    top: 50%;	    
+	}
+
+	.content-hours{
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		width: 50px;
+		height: 4px;
+		background-color: #915054;
+		-webkit-animation:circle 3600s infinite linear;/*匀速 循环*/
+	}
+
+@-webkit-keyframes circle{
+0%{ transform:rotate(0deg);transform-origin: 0;  }
+100%{ transform:rotate(360deg);transform-origin: 0; }
+}
+	.content-minute{
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		width: 70px;
+		height: 4px;
+		background-color: #555555;
+		transform: rotate(90deg);	
+		transform-origin: 0;
+		-webkit-animation:circle 60s infinite linear;/*匀速 循环*/
+	}
+	.content-shade{
+		position: absolute;
+		left: 50%;
+		top: 50%;
+		width: 200px;
+		height: 200px;
+		margin-top: -100px;
+		background-color: #999999;
+		transform: rotate(45deg);
+		transform-origin: 0 50%; 
+		opacity:0.1;filter:alpha(opacity=10); 
+	}
+
+	</style>
+</head>
+<body>
+<div class="main">
+<div class="content">
+</div>
+<div class="content--outer-shell">
+</div>
+<div class="content--inner-shell">
+	<div class="content-top"></div>
+	<div class="content-left"></div>
+	<div class="content-buttom"></div>
+	<div class="content-right"></div>
+	<div class="content-hours"></div>	
+	<div class="content-minute"></div>	
+	<div class="content-shade"></div>		
+</div>
+
+</div>
+</body>
+</html>
