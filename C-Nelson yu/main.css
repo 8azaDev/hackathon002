@@ -103,8 +103,8 @@
 }
 
 .d{
-    width:2px;
-    height: 5px;
+    width:5px;
+    height: 2px;
     background: black;
     position: absolute;
     top: 50%;
