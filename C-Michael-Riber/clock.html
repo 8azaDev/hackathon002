@@ -83,10 +83,11 @@
 		-webkit-animation:circle 3600s infinite linear;/*匀速 循环*/
 	}
 
-@-webkit-keyframes circle{
-0%{ transform:rotate(0deg);transform-origin: 0;  }
-100%{ transform:rotate(360deg);transform-origin: 0; }
-}
+	@-webkit-keyframes circle{
+		0%{ transform:rotate(0deg);transform-origin: 0;  }
+		100%{ transform:rotate(360deg);transform-origin: 0; }
+	}
+
 	.content-minute{
 		position: absolute;
 		top: 50%;
@@ -108,7 +109,19 @@
 		background-color: #999999;
 		transform: rotate(45deg);
 		transform-origin: 0 50%; 
-		opacity:0.1;filter:alpha(opacity=10); 
+		opacity:0.2;
+		filter:alpha(opacity=20); 
+	}
+	.content-dot{
+		position: absolute;
+		left: 50%;
+		top: 50%;
+		width: 8px;
+		height: 8px;
+		border-radius: 100%;
+		background: black;
+		margin-left: -2px;
+		margin-top: -2px;
 	}
 
 	</style>
@@ -126,7 +139,8 @@
 	<div class="content-right"></div>
 	<div class="content-hours"></div>	
 	<div class="content-minute"></div>	
-	<div class="content-shade"></div>		
+	<div class="content-shade"></div>	
+	<div class="content-dot"></div>	
 </div>
 
 </div>
