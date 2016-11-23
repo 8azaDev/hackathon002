@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		div{ margin: 0; padding: 0; }
+		.main{ position: relative; margin : 100px; width: 600px; height: 600px; padding-top: 100px; background-color: #000;}
+		.head{ position: relative; margin-left: 150px; width: 100px; height: 100px; background-color: green; border-radius: 50%; border: 1px solid #fff;}
+		.hat{ position: absolute; top: 0; left: 5px; width: 100px; height: 25px; background-color: red; border-radius: 5px;}
+		.hat:before{ content: ''; position: absolute; top: -20px; left: 25px; width: 50px; height: 20px; background-color: red; border-radius: 3px; }
+		.body{ position: absolute; top: 210px; left: 200px; width: 2px; height: 150px; background-color: #fff;}
+		.arm-left{ position: absolute; top: 220px; left: 100px; width: 100px; height: 100px; border-top: 2px solid #fff; border-left: 2px solid #fff; animation: move1 .6s 0s linear both infinite alternate; transform-origin: 100% 0;}
+		.arm-right{ position: absolute; top: 115px; left: 200px; width: 100px; height: 100px; border-right: 2px solid #fff; border-bottom: 2px solid #fff; animation: move2 .6s 0s linear both infinite alternate; transform-origin: 0 100%;}
+		.leg-left{ position: absolute; top: 350px; left: 50px; width: 150px; height: 150px; border-right: 2px solid #fff; border-bottom: 2px solid #fff; transform: rotate(45deg); transform-origin: 100% 0; animation: move3 .6s 0s linear both infinite alternate;}
+		.leg-right{ position: absolute; top: 350px; left: 200px; width: 150px; height: 150px; border-top: 2px solid #fff; border-right: 2px solid #fff; transform: rotate(45deg); transform-origin: 0 0; animation: move4 .6s 0s linear both infinite alternate;}
+
+		
+		@keyframes updown{
+			0% { transform: translateY(10px);}
+			100% { transform: none;}
+		}
+		@keyframes move1{
+			0% { transform: none; }
+			100% { transform: rotate(-180deg); }
+		}
+		@keyframes move2{
+			0% { transform: none; }
+			100% { transform: rotate(180deg); }
+		}
+		@keyframes move3{
+			0% { transform: rotate(0deg); }
+			100% { transform: rotate(-90deg); }
+		}
+		@keyframes move4{
+			0% { transform: rotate(0deg); }
+			100% { transform: rotate(90deg); }
+		}
+	</style>
+</head>
+<body>
+	<div class="main">
+		<div class="head">
+			<div class="hat">
+			</div>
+		</div>
+		<div class="body"></div>
+		<div class="arm-left"></div>
+		<div class="arm-right"></div>
+		<div class="leg-left"></div>
+		<div class="leg-right"></div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,15 @@
+.main {
+	width: 1200px;
+	height: auto;
+	position: relative;
+	margin: 0 auto;
+}
+.content {
+	position: absolute
+	width:200px
+	height:200px;
+	left: 50%
+	top:50%
+	transform:translate(-50%, -50%);
+	color: red;
+}
