@@ -12,7 +12,7 @@
     width:200px;
     height:200px;    
     border-radius:50%;    
-    border-width: 5px;
+    border-width: 8px;
     border-style: solid;
     border-color:rgb(106,216,213);
     background-color: white;    
@@ -29,21 +29,15 @@
     top:70px;    
 }
 
-@keyframes hour
-{
-0%   {transform: rotate(0deg)}
-100% {transform: rotate(360deg)}
-}
-
-@keyframes minute
+@keyframes frame
 {
 0%   {transform: rotate(0deg)}
 100% {transform: rotate(360deg)}
 }
 
 .hour{    
-    animation-name: hour;
-    animation-duration: 12s;
+    animation-name: frame;
+    animation-duration: 60s;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
     animation-play-state: running;
@@ -59,8 +53,8 @@
 }
 
 .minute{    
-    animation-name: minute;
-    animation-duration: 2s;
+    animation-name: frame;
+    animation-duration: 1s;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
     animation-play-state: running;
