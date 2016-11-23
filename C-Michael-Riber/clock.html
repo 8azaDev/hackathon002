@@ -15,7 +15,7 @@
 		height:450px;
 		left: 50%;
 		top:50%;
-		background-color: #00A99E;
+		background-color: #00A99E;		
 		transform: translate(-50%,-50%);
 	}
 	.content--outer-shell {
@@ -98,6 +98,18 @@
 		transform-origin: 0;
 		-webkit-animation:circle 60s infinite linear;/*匀速 循环*/
 	}
+	.content-shade{
+		position: absolute;
+		left: 50%;
+		top: 50%;
+		width: 200px;
+		height: 200px;
+		margin-top: -100px;
+		background-color: #999999;
+		transform: rotate(45deg);
+		transform-origin: 0 50%; 
+		opacity:0.3;filter:alpha(opacity=30); 
+	}
 
 	</style>
 </head>
@@ -113,8 +125,10 @@
 	<div class="content-buttom"></div>
 	<div class="content-right"></div>
 	<div class="content-hours"></div>	
-	<div class="content-minute"></div>			
+	<div class="content-minute"></div>	
+	<div class="content-shade"></div>		
 </div>
+
 </div>
 </body>
 </html>
