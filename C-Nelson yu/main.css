@@ -1,0 +1,106 @@
+.panel{
+    width: 600px;
+    height:400px;    
+    background-color: rgb(0, 169, 158);    
+    text-align: center;   
+    padding-top:100px;
+    padding-left: 200px; 
+    box-sizing: border-box;
+}
+
+.clock{
+    width:200px;
+    height:200px;    
+    border-radius:50%;    
+    border-width: 8px;
+    border-style: solid;
+    border-color:rgb(106,216,213);
+    background-color: white;    
+    position: relative;    
+}
+
+.s{
+    width:200px;
+    height:200px;        
+    background-image:linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0));
+    transform: rotate(-45deg);           
+    position: absolute;
+    left: 70px;
+    top:70px;    
+}
+
+@keyframes frame
+{
+0%   {transform: rotate(0deg)}
+100% {transform: rotate(360deg)}
+}
+
+.hour{    
+    animation-name: frame;
+    animation-duration: 60s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+
+
+    width:2px;
+    height:50px;
+    background-color: red;
+    position: absolute;
+    left: 50%;
+    bottom: 50%;    
+    transform-origin: 50% 100%;    
+}
+
+.minute{    
+    animation-name: frame;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+
+    width:2px;
+    height:80px;
+    background-color: black;
+    position: absolute;
+    left: 50%;
+    bottom: 50%;
+    transform-origin: 50% 100%;
+    transform: rotate(90deg)
+}
+
+.a{
+    width:2px;
+    height: 5px;
+    background: black;
+    position: absolute;
+    top: 0px;
+    left: 50%;
+}
+
+.b{
+    width:5px;
+    height: 2px;
+    background: black;
+    position: absolute;
+    top: 50%;
+    right: 0;
+}
+
+.c{
+    width:2px;
+    height: 5px;
+    background: black;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+}
+
+.d{
+    width:5px;
+    height: 2px;
+    background: black;
+    position: absolute;
+    top: 50%;
+    left: 0;
+}
