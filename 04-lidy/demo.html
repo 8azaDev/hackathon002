@@ -1,0 +1,151 @@
+<html>
+<head>
+    <title>demo</title>
+    <style>
+        body {
+            background-color: #000;
+        }
+
+        .person {
+            position: absolute;
+            left: 50%;
+            top: 20%;
+            transform: translate(-50%, 0); /*都要补前缀*/
+        }
+
+        .head {
+            position: absolute;
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            border: 3px solid #fff;
+        }
+
+        .body {
+            position: absolute;
+            height: 200px;
+            width: 4px;
+            background-color: #fff;
+            left: 50px;
+            top: 103px;
+        }
+
+        .left-hand, .right-hand {
+            position: absolute;
+            width: 160px;
+            height: 160px;
+        }
+
+        .left-hand {
+            border-top: 3px solid #fff;
+            border-left: 3px solid #fff;
+            top: 103px;
+            left: -109px;
+            transform: rotate(-20deg); /*都要补前缀*/
+            transform-origin: right top;
+            animation:left-hand 1s ease infinite;
+        }
+        @keyframes left-hand {
+            0% { transform: rotate(-20deg);}
+            50%{ transform:  rotate(-90deg)}
+            100% {transform: rotate(-20deg);}
+        }
+        .right-hand {
+            border-bottom: 3px solid #fff;
+            border-right: 3px solid #fff;
+            top: -55px;
+            left: 52px;
+            transform: rotate(0deg);
+            transform-origin: left bottom;
+            animation:right-hand 1s ease infinite;
+        }
+        @keyframes right-hand {
+            0% { transform: rotate(0deg);}
+            50%{ transform:  rotate(120deg)}
+            100% {transform: rotate(0deg);}
+        }
+        .left-leg, .right-leg {
+            position: absolute;
+            width: 160px;
+            height: 160px;
+        }
+
+        .left-leg {
+            border-bottom: 3px solid #fff;
+            border-right: 3px solid #fff;
+            top: 300px;
+            left: -109px;
+            transform: rotate(50deg);
+            transform-origin: right top;
+            animation:left-leg 1s ease  infinite;
+        }
+        @keyframes left-leg {
+            0% { transform: rotate(50deg);}
+            50%{ transform:  rotate(-80deg)}
+            100% {transform: rotate(50deg);}
+        }
+        .right-leg {
+            border-top: 3px solid #fff;
+            border-right: 3px solid #fff;
+            top: 300px;
+            left: 52px;
+            transform: rotate(0deg);
+            transform-origin: left top;
+            animation:right-leg  1s ease  infinite;
+        }
+        @keyframes right-leg  {
+            0% { transform: rotate(0deg);}
+            50%{ transform:  rotate(80deg)}
+            100% {transform: rotate(0deg);}
+        }
+        .hat{
+            position: absolute;
+            top: 00px;
+            left: -5px;
+        }
+        .hat .yuan{
+            position: absolute;
+            background-color: #fff;
+            border-radius: 50%;
+            width: 120px;
+            height: 50px;
+            left:0;
+            top:0;
+        }
+        .hat .mark{
+            left:0;
+            top:30px;
+            width: 120px;
+            height: 30px;
+            position: absolute;
+            background-color: #000;
+        }
+    </style>
+</head>
+<body>
+<div class="person">
+    <div class="hat">
+        <div class="yuan"></div>
+        <div class="mark"></div>
+    </div>
+    <div class="head">
+        <!--头部-->
+    </div>
+    <div class="body">
+        <!--身体-->
+    </div>
+    <div class="left-hand">
+        <!--左手-->
+    </div>
+    <div class="right-hand">
+        <!--右手-->
+    </div>
+    <div class="left-leg">
+        <!--左腿-->
+    </div>
+    <div class="right-leg">
+        <!--右腿-->
+    </div>
+</div>
+</body>
+</html>
