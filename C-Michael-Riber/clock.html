@@ -18,25 +18,16 @@
 		background-color: #00A99E;		
 		transform: translate(-50%,-50%);
 	}
-	.content-outer-shell {
+	.content-shell {
 		position: absolute;
 		width:200px;
 		height:200px;
 		left: 50%;
 		top:50%;
-		background-color: #5FC5BA;
-		border-radius: 100%;
-		transform: translate(-50%,-50%);
-	}
-	.content-inner-shell {
-		position: absolute;
-		width:180px;
-		height:180px;
-		left: 50%;
-		top:50%;
 		background-color: #FFFFFF;
 		border-radius: 100%;
 		transform: translate(-50%,-50%);
+		border:10px solid #5FC5BA;
 	}
 	.content-top{
 		position: absolute;
@@ -128,21 +119,18 @@
 </head>
 <body>
 <div class="main">
-<div class="content">
-</div>
-<div class="content-outer-shell">
-</div>
-<div class="content-inner-shell">
-	<div class="content-top"></div>
-	<div class="content-left"></div>
-	<div class="content-buttom"></div>
-	<div class="content-right"></div>
-	<div class="content-hours"></div>	
-	<div class="content-minute"></div>	
-	<div class="content-shade"></div>	
-	<div class="content-dot"></div>	
-</div>
-
+	<div class="content">
+		<div class="content-shell">		
+			<div class="content-top"></div>
+			<div class="content-left"></div>
+			<div class="content-buttom"></div>
+			<div class="content-right"></div>
+			<div class="content-hours"></div>	
+			<div class="content-minute"></div>	
+			<div class="content-shade"></div>	
+			<div class="content-dot"></div>				
+		</div>
+	</div>
 </div>
 </body>
 </html>

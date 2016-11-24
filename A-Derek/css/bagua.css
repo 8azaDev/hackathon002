@@ -1,0 +1,35 @@
+﻿#bagua {
+            width: 240px;
+            height: 480px;
+            background: #eee;
+            border-color: #1f1a17;
+            border-width: 1px 1px 1px 250px;
+            position: relative;
+        }
+
+            #bagua, #bagua:before, #bagua:after {
+                border-radius: 100%;
+                border-style: solid;
+            }
+
+                #bagua:before, #bagua:after {
+                    content: "";
+                    position: absolute;
+                    width: 60px;
+                    height: 60px;
+                    border-width: 90px;
+                }
+
+                #bagua:before {
+                    top: 0;
+                    left: -50%;
+                    background: #eee;
+                    border-color: #1f1a17;
+                }
+
+                #bagua:after {
+                    top: 50%;
+                    left: -50%;
+                    background: #1f1a17;
+                    border-color: #eee;
+                }
